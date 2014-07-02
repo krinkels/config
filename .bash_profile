@@ -1,7 +1,13 @@
 # -G only works on OS X, use --color for Linux
-alias ls='ls -G'
-alias la='ls -G -a'
-alias ll='ls -G -l'
+if [[ $OSTYPE == darwin* ]]; then
+    alias ls='ls -G'
+    alias la='ls -G -a'
+    alias ll='ls -G -l'
+elif [[ $OSTYPE == linux-gnu ]]; then
+    alias ls='ls --color'
+    alias la='ls --color -a'
+    alias ll='ls --color -l'
+fi
 
 # prompts
 export CLICOLOR=1
