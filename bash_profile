@@ -9,6 +9,8 @@ elif [[ $OSTYPE == linux-gnu ]]; then
     alias ll='ls --color -l'
 fi
 
+alias vinotes='vi `date "+%m-%d-%y.txt"`'
+
 # prompts
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad

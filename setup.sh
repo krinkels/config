@@ -9,8 +9,8 @@ if [ -f ~/.vimrc ]; then
     mv ~/.vimrc ~/.vimrc.old
 fi
 
-cp bash_profile ~/.bash_profile
-cp vimrc ~/.vimrc
+ln -s ~/config/bash_profile ~/.bash_profile
+ln -s ~/config/vimrc ~/.vimrc
 
 # get vcprompt
 if [ ! -f ~/bin/vcprompt ]; then
