@@ -10,6 +10,7 @@ elif [[ $OSTYPE == linux-gnu ]]; then
 fi
 
 alias vinotes='vi `date "+%m-%d-%y.txt"`'
+alias pwdcp='pwd | pbcopy'
 
 # prompts
 export CLICOLOR=1
@@ -42,4 +43,4 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-export PS1="\u@\h:\W\$(~/bin/vcprompt -f '[${FGRN}%b${RS}:${FCYN}%h%m%a%u${RS}]')${FMAG}$ ${RS}"
+export PS1="${FGRN}\u${RS}@\h:\W\$(~/bin/vcprompt -f '[${FGRN}%b${RS}:${FCYN}%h%m%a%u${RS}]')${FMAG}$ ${RS}"
