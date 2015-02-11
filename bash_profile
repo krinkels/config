@@ -10,7 +10,7 @@ elif [[ $OSTYPE == linux-gnu ]]; then
 fi
 
 alias vinotes='vi `date "+%m-%d-%y.txt"`'
-alias pwdcp='pwd | pbcopy'
+alias pwdcp='echo -n `pwd` | pbcopy'
 
 # prompts
 export CLICOLOR=1
