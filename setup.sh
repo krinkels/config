@@ -22,4 +22,6 @@ if [ ! -f ~/bin/vcprompt ]; then
     curl -sL https://github.com/djl/vcprompt/raw/master/bin/vcprompt > ~/bin/vcprompt
     chmod 755 ~/bin/vcprompt
 fi
+
+source ~/.bash_profile
 echo Done!
